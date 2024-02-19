@@ -32,6 +32,30 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Abstract\IEntity.cs" />
+    <Compile Include="Entities\Concrete\Category.cs" />
+    <Compile Include="Entities\Concrete\Course.cs" />
+    <Compile Include="Entities\Concrete\Instructor.cs" />
+    <Compile Include="Entities\Abstract\IDescription.cs" />
+    <Compile Include="DataAccess\Abstract\IProductDal.cs" />
+    <Compile Include="DataAccess\Concrete\CategoryDal.cs" />
+    <Compile Include="DataAccess\Concrete\CourseDal.cs" />
+    <Compile Include="DataAccess\Concrete\InstructorDal.cs" />
+    <Compile Include="Business\Abstract\IProductManager.cs" />
+    <Compile Include="Business\Concrete\InstructorManager.cs" />
+    <Compile Include="Business\Concrete\CourseManager.cs" />
+    <Compile Include="Business\Concrete\CategoryManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business\" />
+    <Folder Include="Entities\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="Entities\Abstract\" />
+    <Folder Include="Entities\Concrete\" />
+    <Folder Include="DataAccess\Abstract\" />
+    <Folder Include="DataAccess\Concrete\" />
+    <Folder Include="Business\Abstract\" />
+    <Folder Include="Business\Concrete\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
